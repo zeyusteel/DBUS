@@ -1,0 +1,12 @@
+<node>
+  <interface name="GDBus.Demo.foo">
+    <property name="value" type="s" access="read"/>
+    <method name="setValue">
+      <arg direction="in" type="s" name="in"/>
+      <arg direction="out" type="b" name="out"/>
+    </method>
+    <signal name="sendValue">
+      <arg type="s" name="value"/>
+    </signal>
+  </interface>
+</node>
